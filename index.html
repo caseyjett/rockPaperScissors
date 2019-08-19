@@ -72,11 +72,8 @@
             }
         }      
         
-        
-
-       
-
         playRound(); 
+        
         } //to end game() 
         
         function score() {
@@ -87,18 +84,12 @@
         game();
         score(); 
 
-         function gameResults() {
-            if (i == 5 && playerScore > computerScore) {
-                alert("Congrats! You conquered the computer")
-            } else if (i == 5 && computerScore > playerScore) {
-                alert("Better luck next time chump; the conputer prevailed")
-            } else if (i == 5) {
-                alert('Somehow there had been a tie!')
-            }
-        }
-        gameResults(); 
-
     } // to end loop
+
+    let winner = (computerScore > playerScore) ? alert("The computer prevailed this time. CTRL + R to play again") : 
+    (playerScore > computerScore) ? alert("Congrats on conquering the computer!") :
+    alert("Nobody won this round. Why don't you try again?"); 
+
     </script>
 </body>
 </html>
